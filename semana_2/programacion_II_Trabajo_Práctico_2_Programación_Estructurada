@@ -1,0 +1,357 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package programacion_2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Avernal
+ */
+public class Programacion_2 {
+
+ 
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+  // EJERCICIO 1:
+  /*int anio;
+  
+        System.out.println("Ingrese el anio en el que esta y le diremos si es bisiesto o no: ");
+        anio = Integer.parseInt(input.nextLine());
+        
+        if (anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0 ){
+            System.out.println("Tu anio "+anio+ " Es Bisiesto!");
+            
+        }else{
+            System.out.println("Tu anio NO es bisiesto :C "); */
+        
+    
+    
+    
+    //Ejercicio 2:
+    
+    /* int usuario,mayor,menor;
+    mayor=0;
+    menor=0;       
+       System.out.println("Escriba  1/3 numeros y le diremos cual es el mayor: "); //aca igualamos las 2 variables  a lo que el usuario ingresa ( porque sino el menor no se queda registrado)
+            usuario = Integer.parseInt(input.nextLine());
+            mayor=usuario;
+            menor=usuario;
+    
+    for (int i = 1; i < 3; i++) {
+            System.out.println("Escriba "+ (i+1)+" /3 numeros y le diremos cual es el mayor: ");
+            usuario = Integer.parseInt(input.nextLine());
+            
+            if (usuario > mayor) {
+                mayor = usuario;
+            } else {
+                 menor = usuario;
+            }
+            
+        }
+    
+        System.out.println("El mayor es: " +mayor+ " Y el menor es: "+menor);*/
+        
+    
+    
+//Ejercicio 3 :
+    /*
+        int edad; //declaracion variable
+    
+        System.out.println("Ingrese su edad y le diremos en que etapa de vida se encuentra: ");//pedimos al usuario
+        edad=Integer.parseInt(input.nextLine());
+       
+        // mensajes que saldran en pantalla :
+        if (edad<=12) { 
+            System.out.println("Eres un ninio ");
+        }
+        if (edad > 12 & edad <=17) {
+            System.out.println("Eres un adolescente ");
+        }
+        if (edad >= 18 & edad <= 59) {
+            System.out.println("Eres un adulto ");
+        }
+        if (edad >= 60 ) {
+            System.out.println("Eres un adulto mayor ");
+        }                                                     */
+    
+    
+    //Ejercicio 4 :
+    /* double cliente_respuesta_1,descuento,cuenta_final;
+    String cliente_respuesta_2;
+    
+        System.out.println("Ingrese el precio del producto que se va a llevar: ");
+        cliente_respuesta_1=Double.parseDouble(input.nextLine());
+        
+        while (true) {       //Aca puse un while debibo a que si el usuario ingresa una letra NO VALIDA,  gracias al bucle le hace ingresar valores nuevamente     
+            
+        
+        System.out.println("Ingrese la categoría del producto (A, B o C): ");
+        cliente_respuesta_2 = input.nextLine().toUpperCase();
+        
+       
+        switch (cliente_respuesta_2) {
+            case "A":
+                
+                descuento = cliente_respuesta_1 / 10;
+                cuenta_final= cliente_respuesta_1 - descuento;
+                System.out.println("Usted recibira un descuento del 10%, teniendo que pagar: " +cuenta_final);
+                break;
+            case "B":
+                descuento = cliente_respuesta_1 / 15;
+                cuenta_final= cliente_respuesta_1 - descuento;
+                System.out.println("Usted recibira un descuento del 15%, teniendo que pagar: " +cuenta_final);
+                break;
+                
+            case "C":
+                descuento = cliente_respuesta_1 / 20;
+                cuenta_final= cliente_respuesta_1 - descuento;
+                System.out.println("Usted recibira un descuento del 20%, teniendo que pagar: " +cuenta_final);
+                break;
+            default:
+                System.out.println("Ingrese un valor valido !!");;
+        }
+        
+        } */
+    
+    
+   
+    //Ejercicio 5:
+    
+    /*
+    int numero,resultado;
+        resultado=0; //Inicie la variable en 0 para que almacene los numeros pares 
+        System.out.println("Vamos a sumar todos los numeros positivos que usted ponga");
+        System.out.println("Para salir de la operacion PULSE \"0\"");
+        while (true) {            
+            System.out.println("Ingrese numero positivo: ");
+            numero = Integer.parseInt(input.nextLine());
+            
+            if (numero %2==0) {
+                resultado += numero;
+            }
+                
+            if (numero == 0) {
+                System.out.println("Has finalizado el programa, y su resultado de la sumatoria es de: "+resultado);
+                break;
+            }
+        }*/
+   
+       /*   
+        //Ejercicio 6:
+        
+       int numero,contador_positivo,contador_negativo,contador_ceros;
+       //iniciamos los contadores en 0
+       contador_positivo=0;
+       contador_negativo=0;
+       contador_ceros=0;
+        for (int i = 0; i < 10; i++) { //Aca le damos al ciclo for 10 vueltas
+            System.out.println("Ingrese un numero: " +" ("+ (i+ 1) + " /10)"); //mostramos el mensjae en pantalla con su contador de vueltas del ciclo
+            numero = Integer.parseInt(input.nextLine());
+           //Condiciones
+            if (numero < 0) {
+                contador_negativo+=1;
+                
+            }
+            if (numero > 0) {
+                contador_positivo+=1;
+            }
+            if (numero ==0) {
+                contador_ceros+=1;
+                
+            }
+        }
+        //Mensajes finales.
+        System.out.println("La cantidad de numeros positivos: "+contador_positivo);
+        System.out.println("La cantidad de numeros negativos: "+contador_negativo);
+        System.out.println("La cantidad de ceros: "+contador_ceros);
+        
+        
+        */
+        
+       /* 
+       //Ejercicio 7:
+       
+       double nota;
+       
+        while (true) {            
+            System.out.println("Ingrese una nota valida entre el 0 y el 10: ");
+            nota= Double.parseDouble(input.nextLine());
+            
+            if (nota<0 | nota > 10) {
+                System.out.println("Debe ingresar un valor valido entre el 0 y el 10! ");
+            }else{
+                System.out.println("Nota guardada correctamente.");
+                break;
+            }
+            
+        }*/
+        
+       
+       
+        //Ejercicio 8:
+        /*
+        double descuento,precio_base,valor_final;
+        System.out.println("Cual es el precio del producto?: ");
+            precio_base=Double.parseDouble(input.nextLine());
+            
+        System.out.println("Cual es el descuento del producto?: ");
+            descuento=Double.parseDouble(input.nextLine());
+            
+           valor_final= calcularPrecioFinal(precio_base, descuento);
+           
+           System.out.println("El precio final es de: " +valor_final+" Pesos");
+           
+        
+        
+        
+        
+        
+        
+    }
+   static double calcularPrecioFinal(double precio_base, double porcentaje_descuento){
+        double precio_final,descuento;
+            descuento=precio_base * (porcentaje_descuento /100);
+            precio_final = precio_base - descuento;
+        
+       
+        
+        return precio_final;
+    }
+}*/
+        
+        
+
+    //Ejercicio 9:
+    
+    /*
+    double costo_envio, peso_producto,precio_producto,envio,precio_final;
+    String zona_de_cliente;
+        
+    
+    System.out.println("Ingrese el precio del producto: ");
+        precio_producto=Double.parseDouble(input.nextLine());
+       
+        
+        System.out.println("Ingrese el peso del producto: ");
+        peso_producto=Double.parseDouble(input.nextLine());
+        
+        
+        
+        System.out.println("El producto es Nacional o Internacional?: ");
+        zona_de_cliente=input.nextLine().toLowerCase();
+        
+        envio = costo_envio(zona_de_cliente,peso_producto);
+       precio_final= costo_final(precio_producto,envio);
+        
+        System.out.println("El precio final del producto es de : $ "+precio_final);
+  
+    
+    
+    
+    
+    }
+    public static double costo_envio(String zona_cliente, double peso_producto){ //aca en la funcion le ingresamos un valor string ( para que ingrese en el switch y un peso del producto, para realizar las cuentas del peso)
+        double precio_del_peso;
+       precio_del_peso=0;
+        switch (zona_cliente) {
+            case "nacional":
+                 precio_del_peso= peso_producto * 5;
+                break;
+            case "internacional":
+                 precio_del_peso= peso_producto * 10; 
+                 break;
+            default:
+                System.out.println("Ingrese una zona valida!");;
+                
+                
+        }
+        return precio_del_peso; //retorna los valores
+        }  
+            
+  //Aca creamos la segunda funcion que lo que hace es que recibe como parametros un valor de precio_producto que es ingresado por el usuario y el precio del peso que fue resuelta en la funcion de costo envio
+       public static double costo_final(double precio_producto, double precio_del_peso){ 
+           double precio_final;
+           precio_final=0;
+           
+           precio_final= precio_producto + precio_del_peso;
+           
+           return precio_final; //retorna los valores 
+            
+        */
+        
+       
+       
+       //Ejercicio 10:
+     /*  
+       int stock_inicial,stock_ingresado,stock_vendido,stock_neto;
+       
+        System.out.println("Ingrese cuanto stock inicial tenias: ");
+        stock_inicial=Integer.parseInt(input.nextLine());
+       
+       
+        System.out.println("Ingrese cuanto stock vendiste: ");
+        stock_vendido=Integer.parseInt(input.nextLine());
+       
+       
+        System.out.println("Ingrese cuanto stock ingreso nuevamente: ");
+        stock_ingresado=Integer.parseInt(input.nextLine());
+       
+       stock_neto=calcular_stock(stock_inicial,stock_vendido,stock_ingresado);
+       
+        System.out.println("El stock neto final es de: "+stock_neto);
+       
+       }
+    public static int calcular_stock(int stock_inicial,int stock_vendido, int stock_ingresado){
+        int stock=0;
+        stock= (stock_inicial - stock_vendido) + stock_ingresado;
+        return stock;
+    
+       */
+
+
+     //Ejercicio 12:
+     /*
+     double[] array_precios = {10.5,11.0,12.5,15};
+     
+        for (double n :array_precios) {
+            System.out.println("Precios: "+n);
+        }
+     
+     //ahora los precios pero modificados
+     array_precios[2]=70.45;
+     array_precios[0]=1;
+        System.out.println();
+     //precios actualizados
+     for(double n: array_precios){
+         System.out.println("Precios actualizados: "+n);
+     }
+     */
+    
+    //Ejercicio 13:
+        double [] array_precios={11.5 ,12, 15.5,17.7};
+        
+        System.out.println("los precios son:");
+        mostrar_precios(array_precios, 0); //llamada directa a la funcion con un valor de inicio de index ( 0 ) 
+    
+    
+    
+    
+    
+    
+     
+     
+    }   
+    public static void mostrar_precios(double[] array,int index){ //creacion de la funcion recursiva que returna void, ningun valor, solo muestra
+        if (index == array.length) {
+            return;
+        }
+        
+        System.out.println("El precio es: "+array[index] );//aca mostramos por pantalla el array con su indice[ index ]
+        mostrar_precios(array,index+1); //aca hacemos la recursividad, que index sume +1 en cada vuelta.
+    }
+    
+}
